@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "example01": "cd example01 && webpack -p",
-    "example02": "cd example01 && webpack -p"
+    "simple-example": "cd simple-example && webpack -p",
+    "loaders": "cd loaders && webpack -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.35.2",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   }
 }
