@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "simple-example": "cd simple-example && webpack -p",
-    "loaders": "cd loaders && webpack -p"
+    "loaders": "cd loaders && webpack -p",
+    "code-splitting": "cd code-splitting && webpack -p"
   },
   "author": "",
   "license": "ISC",
