@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "simple-example": "cd simple-example && webpack -p",
-    "loaders": "cd loaders && webpack -p",
-    "code-splitting": "cd code-splitting && webpack -p"
+    "simple-example": "cd simple-example && webpack --mode=none",
+    "loaders": "cd loaders && webpack --mode=none",
+    "code-splitting": "cd code-splitting && webpack --mode=none",
+    "webpack-real-project": "cd webpack-proyect-react && npm run build"
   },
   "author": "",
   "license": "ISC",
