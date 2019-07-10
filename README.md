@@ -10,6 +10,7 @@
 
     * Usar webpack para compilar una aplicación react
     * Usar webpack para reducir el tamaño de los archivos js.
-    * Vendor splitting - separar las librerias de terceros del código de la aplicación.
-    * Hash name
+    * Vendor splitting / manifest - separar las librerias de terceros del código de la aplicación.
+    * Hash name / chunkhash - evitar caché de los navegadores
     * Referencias a los script automaticamente con html-webpack-plugin
+    * Limpiar la carpeta distribuidora cada vez que se compila

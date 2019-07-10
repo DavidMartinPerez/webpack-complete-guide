@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const VENDOR_LIBS = [
   'faker',
@@ -22,7 +23,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -38,8 +39,9 @@ module.exports = {
     ]
   },
   plugins:[
+    new CleanWebpackPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
+      names: ['vendor', 'manifest']
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html'
