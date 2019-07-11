@@ -8,7 +8,9 @@
     "loaders": "cd loaders && webpack --mode=none",
     "code-splitting": "cd code-splitting && webpack --mode=none",
     "webpack-react-project": "cd webpack-proyect-react && npm run build",
-    "webpack-server-react-project": "cd webpack-proyect-react && npm run server"
+    "webpack-server-react-project": "cd webpack-proyect-react && npm run server",
+    "install-demos" : "npm i",
+    "install-project": "cd webpack-proyect-react && npm i"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.1",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "image-webpack-loader": "^5.0.0",
