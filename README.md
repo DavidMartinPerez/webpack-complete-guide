@@ -14,3 +14,5 @@
     * Hash name / chunkhash - evitar caché de los navegadores
     * Referencias a los script automaticamente con html-webpack-plugin
     * Limpiar la carpeta distribuidora cada vez que se compila
+
+    (prueba)
